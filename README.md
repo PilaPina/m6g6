@@ -1,3 +1,20 @@
+# This project is using Recoil: a React State management library. 
+Recoil has two core concepts:  atoms and selectors. 
+
+- Atoms: 
+  - Think of an atom as a box that can hold some information (we call this “state”)
+  - Create a box by giving it a unique name (the “cache key”) and putting some default information in it
+  - Components can look inside the box, use the information, and change it
+  - When information in the box changes, all components using it will know about the change
+  - Similar to how useState works in React
+
+- Selectors: 
+  - Like atoms, but used for information calculated based on other information (we call this “derived data”)
+  - Look inside atoms and other selectors, and do things that might take time (like fetching data from a server)
+  - Different parts of the program can use selectors and will be updated when the information in the selector changes
+
+  
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
